@@ -10,23 +10,45 @@ section.gallery div{
     text-align: left;
 
 }
-section.gallery div p{
+.line{
+    height: 0.3px;
+    background: rgb(199, 199, 199);
+    max-width: 365px;
+    margin-left: 15px;
+}
+.box{
+  height: 600px;
+}
+section.gallery p{
     font-size: 12pt;
     display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+
 }
 section.gallery div img {
-    width: 100%;
-    height: auto;
+    width: 95%;
+    height: 300px;
+    margin-left: 10px;
+
   }
+
   section.gallery div img.profileImage{
     height:40px;
     width:40px;
     vertical-align: middle;
     border-radius: 50%;
-
+    margin-top: -5px;
+    margin-left: 10px;
   }
-  h3, h6{
-      padding: 15px;
+  h3{
+      padding: 10px;
+      margin-top: -7px;
+  }
+  h6.date{
+    margin-top: -7px;
+    margin-left: -102px;
+    margin-bottom: -15px;
   }
   .profile{
     display:flex;
@@ -60,15 +82,22 @@ section.gallery div img {
 @media only screen and (max-width:992px) {
   /* For tablets: */
   .gallery {
-    width: 80%;
+    width: 100%;
     padding: 0;
   }
   .button {
-    width: 50%;
+    width: 30%;
+    text-align: center;
   }
 }
 section.gallery div img.logo{
   width:16px;
   height:16px;
-  text-align: right;
+  margin-left: 220px;
+}
+section.gallery div img.logoLikes{
+  width:16px;
+  height:16px;
+  margin-left: 0px;
+
 }

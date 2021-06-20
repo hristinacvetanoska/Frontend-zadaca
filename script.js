@@ -225,21 +225,23 @@ function Display(data){
     var row,cell, img, div;
     for( var i=0;i<=2;i+=2){
         div = document.createElement('div');
+        div.className="box";
         if(data[i].source_type == "facebook"){
-            div.innerHTML='<div class="profile"><img class="profileImage" src="'+data[i].profile_image + '" /><h3>'+data[i].name+'</h3><br><h6>'+data[i].date+'</h6><img class="logo" src="facebook.svg" /></div><div><img src="' + data[i].image + '" /></div><p>'+data[i].caption+'</p>';
+            div.innerHTML='<div class="profile"><img class="profileImage" src="'+data[i].profile_image + '" /><h3>'+data[i].name+'</h3><h6 class="date">'+data[i].date+'</h6><img class="logo" src="facebook.svg" /></div><div><img src="' + data[i].image + '" /></div><p>'+data[i].caption+'</p>'+'<div class="line"><img class="logoLikes" src="heart.svg"/>'+data[i].likes+'</div>';
         }
         else if(data[i].source_type == "instagram"){
-            div.innerHTML='<div class="profile"><img class="profileImage" src="'+data[i].profile_image + '" /><h3>'+data[i].name+'</h3><br><h6>'+data[i].date+'</h6><img class="logo" src="instagram-logo.svg" /></div><div><img src="' + data[i].image + '" /></div><p>'+data[i].caption+'</p>';
+            div.innerHTML='<div class="profile"><img class="profileImage" src="'+data[i].profile_image + '" /><h3>'+data[i].name+'</h3><h6 class="date">'+data[i].date+'</h6><img class="logo" src="instagram-logo.svg" /></div><div><img src="' + data[i].image + '" /></div><p>'+data[i].caption+'</p>'+'<div class="line"><img class="logoLikes" src="heart.svg"/>'+data[i].likes+'</div>';
 
         }
         section.append(div);
 
         div = document.createElement('div');
+        div.className="box";
         if(data[i+1].source_type == "facebook"){
-            div.innerHTML='<div class="profile"><img class="profileImage" src="'+data[i+1].profile_image + '" /><h3>'+data[i+1].name+'</h3><br><h6>'+data[i+1].date+'</h6><img class="logo" src="facebook.svg" /></div><div><img src="' + data[i+1].image + '" /></div><p>'+data[i+1].caption+'</p>';
+            div.innerHTML='<div class="profile"><img class="profileImage" src="'+data[i+1].profile_image + '" /><h3>'+data[i+1].name+'</h3><h6 class="date">'+data[i+1].date+'</h6><img class="logo" src="facebook.svg" /></div><div><img src="' + data[i+1].image + '" /></div><p>'+data[i+1].caption+'</p>'+'<div class="line"><img class="logoLikes" src="heart.svg"/>'+data[i].likes+'</div>';
         }
         else if(data[i+1].source_type == "instagram"){
-            div.innerHTML='<div class="profile"><img class="profileImage" src="'+data[i+1].profile_image + '" /><h3>'+data[i+1].name+'</h3><br><h6>'+data[i+1].date+'</h6><img class="logo" src="instagram-logo.svg" /></div><div><img src="' + data[i+1].image + '" /></div><p>'+data[i+1].caption+'</p>';
+            div.innerHTML='<div class="profile"><img class="profileImage" src="'+data[i+1].profile_image + '" /><h3>'+data[i+1].name+'</h3><h6 class="date">'+data[i+1].date+'</h6><img class="logo" src="instagram-logo.svg" /></div><div><img src="' + data[i+1].image + '" /></div><p>'+data[i+1].caption+'</p>'+'<div class="line"><img class="logoLikes" src="heart.svg"/>'+data[i].likes+'</div>';
 
         }
         
@@ -252,21 +254,23 @@ function DisplayMore(data){
     let div,count=4;
     while(count!=0){
         div = document.createElement('div');
+        div.className="box";
         if(data[i].source_type == "facebook"){
-            div.innerHTML='<div class="profile"><img class="profileImage" src="'+data[i].profile_image + '" /><h3>'+data[i].name+'</h3><br><h6>'+data[i].date+'</h6><img class="logo" src="facebook.svg" /></div><div><img src="' + data[i].image + '" /></div><p>'+data[i].caption+'</p>';
+            div.innerHTML='<div class="profile"><img class="profileImage" src="'+data[i].profile_image + '" /><h3>'+data[i].name+'</h3><h6 class="date">'+data[i].date+'</h6><img class="logo" src="facebook.svg" /></div><div><img src="' + data[i].image + '" /></div><p>'+data[i].caption+'</p>'+'<div class="line"><img class="logoLikes" src="heart.svg"/>'+data[i].likes+'</div>';
         }
         else{
-            div.innerHTML='<div class="profile"><img class="profileImage" src="'+data[i].profile_image + '" /><h3>'+data[i].name+'</h3><br><h6>'+data[i].date+'</h6><img class="logo" src="instagram-logo.svg" /></div><div><img src="' + data[i].image + '" /></div><p>'+data[i].caption+'</p>';
+            div.innerHTML='<div class="profile"><img class="profileImage" src="'+data[i].profile_image + '" /><h3>'+data[i].name+'</h3><h6 class="date">'+data[i].date+'</h6><img class="logo" src="instagram-logo.svg" /></div><div><img src="' + data[i].image + '" /></div><p>'+data[i].caption+'</p>'+'<div class="line"><img class="logoLikes" src="heart.svg"/>'+data[i].likes+'</div>';
 
         }
         document.getElementById("MyGallery").append(div);
 
         div = document.createElement('div');
+        div.className="box";
         if(data[i+1].source_type == "facebook"){
-            div.innerHTML='<div class="profile"><img class="profileImage" src="'+data[i+1].profile_image + '" /><h3>'+data[i+1].name+'</h3><br><h6>'+data[i+1].date+'</h6><img class="logo" src="facebook.svg" /></div><div><img src="' + data[i+1].image + '" /></div><p>'+data[i+1].caption+'</p>';
+            div.innerHTML='<div class="profile"><img class="profileImage" src="'+data[i+1].profile_image + '" /><h3>'+data[i+1].name+'</h3><h6 class="date">'+data[i+1].date+'</h6><img class="logo" src="facebook.svg" /></div><div><img src="' + data[i+1].image + '" /></div><p>'+data[i+1].caption+'</p>'+'<div class="line"><img class="logoLikes" src="heart.svg"/>'+data[i].likes+'</div>';
         }
         else if(data[i+1].source_type == "instagram"){
-            div.innerHTML='<div class="profile"><img class="profileImage" src="'+data[i+1].profile_image + '" /><h3>'+data[i+1].name+'</h3><br><h6>'+data[i+1].date+'</h6><img class="logo" src="instagram-logo.svg" /></div><div><img src="' + data[i+1].image + '" /></div><p>'+data[i+1].caption+'</p>';
+            div.innerHTML='<div class="profile"><img class="profileImage" src="'+data[i+1].profile_image + '" /><h3>'+data[i+1].name+'</h3><h6 class="date">'+data[i+1].date+'</h6><img class="logo" src="instagram-logo.svg" /></div><div><img src="' + data[i+1].image + '" /></div><p>'+data[i+1].caption+'</p>'+'<div class="line"><img class="logoLikes" src="heart.svg"/>'+data[i].likes+'</div>';
 
         }        document.getElementById("MyGallery").append(div);
         count=count-2;
