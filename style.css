@@ -1,0 +1,74 @@
+section.gallery{
+    margin-right: 80px;
+    margin-left: 270px;
+    padding: 20px;
+}
+section.gallery div{
+    float: left;
+    border: 1px solid #ccc;
+    width: 400px;
+    text-align: left;
+
+}
+section.gallery div p{
+    font-size: 12pt;
+    display: inline-block;
+}
+section.gallery div img {
+    width: 100%;
+    height: auto;
+  }
+  section.gallery div img.profileImage{
+    height:40px;
+    width:40px;
+    vertical-align: middle;
+    border-radius: 50%;
+
+  }
+  h3, h6{
+      padding: 15px;
+  }
+  .profile{
+    display:flex;
+    align-items: center;
+  }
+  body{
+      position: relative;
+  }
+  button.button{
+      color: white;
+      background: #4c8ffb;
+      border: 1px #3079ed solid;
+      box-shadow: inset 0 1px 0 #80b0fb;
+      margin-right: 80px;
+      margin-left: 50%;;
+  }
+  button.button:hover{
+    border: 1px #2F5BB7 solid;
+    box-shadow: 0 1px 1px #EAEAEA, inset 0 1px 0 #5A94F1;
+    background: #3F83F1;
+  }
+  button.button:active {
+    box-shadow: inset 0 2px 5px #2370FE;   
+}
+@media only screen and (max-width:768px) {
+  /* For mobile phones: */
+  .gallery, .button, div {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:992px) {
+  /* For tablets: */
+  .gallery {
+    width: 80%;
+    padding: 0;
+  }
+  .button {
+    width: 50%;
+  }
+}
+section.gallery div img.logo{
+  width:16px;
+  height:16px;
+  text-align: right;
+}
