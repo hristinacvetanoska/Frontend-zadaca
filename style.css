@@ -96,7 +96,7 @@ section.gallery div img {
   }
 }
 @media only screen and (min-width:993px) {
-  /* For destop: 203.99%*/
+  /* For destop: */
   .gallery,.gallery div {
     width: 125.99%;
     padding: 0;
