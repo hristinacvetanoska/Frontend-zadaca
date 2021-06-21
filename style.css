@@ -18,6 +18,7 @@ section.gallery div{
 }
 .box{
   height: 600px;
+  width: 24.99999%;
 }
 section.gallery p{
     font-size: 12pt;
@@ -75,16 +76,37 @@ section.gallery div img {
 }
 @media only screen and (max-width:768px) {
   /* For mobile phones: */
-  .gallery, .button, div {
+  .gallery, .button {
+    width: 100%;
+  }
+  .box{
     width: 100%;
   }
 }
 @media only screen and (max-width:992px) {
   /* For tablets: */
-  .gallery {
-    width: 100%;
+  .gallery,.gallery div {
+    width: 106.9%;
     padding: 0;
   }
+ 
+  .button {
+    width: 30%;
+    text-align: center;
+  }
+}
+@media only screen and (min-width:993px) {
+  /* For destop: 203.99%*/
+  .gallery,.gallery div {
+    width: 125.99%;
+    padding: 0;
+    margin-right: auto;
+
+  }
+  .box{
+    width: 55%;
+  }
+ 
   .button {
     width: 30%;
     text-align: center;
