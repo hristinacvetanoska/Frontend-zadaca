@@ -96,7 +96,7 @@ section.gallery div img {
   }
 }
 @media only screen and (min-width:993px) {
-  /* For destop: */
+  /* For desktop: */
   .gallery,.gallery div {
     width: 125.99%;
     padding: 0;
